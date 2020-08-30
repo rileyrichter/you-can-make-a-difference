@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#states").on("keyup", function () {
+  $("#search").on("keyup", function () {
     let value = $(this).val().toLowerCase();
     $(".location-name").filter(function () {
       $(this)
