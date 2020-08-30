@@ -16,4 +16,9 @@ $(document).on("keyup", "#search", function (e) {
 });
 $("#clear").click(function () {
   document.getElementById("search").value = "";
+  $(".location-name").filter(function () {
+    $(this)
+      .parent()
+      .toggle($(this).text().toLowerCase().indexOf(value) > -1);
+  });
 });
