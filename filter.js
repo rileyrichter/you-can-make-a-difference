@@ -14,3 +14,8 @@ $(document).on("keyup", "#search", function (e) {
     Foundation.libs.topbar.toggle();
   }
 });
+
+function clearInput() {
+  document.getElementById("search").value = "";
+  document.getElementById("search").placeholder = "Search for your state";
+}
