@@ -12,6 +12,6 @@ if ("mylocation" in localStorage) {
   let currentLocation = localStorage.getItem("mylocation");
   $(".yourlocation").append(currentLocation);
 } else {
-  $(".your.location").hide();
+  $(".your.location").remove();
   console.log("no");
 }
