@@ -11,12 +11,11 @@ if ("mylocation" in localStorage) {
   let currentLocation = localStorage.getItem("mylocation");
   $(".yourlocation").append(currentLocation);
   setTimeout(function () {
-    $("div.yourlocation")
-      .closest("div.location-grid")
+    $(".yourlocation")
+      .closest(".location-grid")
       .css("border-bottom", "none");
-    $("div.yourlocation").closest("a.button").text("New Text");
+    $(".yourlocation").closest(".button").text("New Text");
     console.log("time");
-  }, 1000);
 } else {
   $(".yourlocation").hide();
 }
