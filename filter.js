@@ -14,7 +14,6 @@ if ("mylocation" in localStorage) {
     .closest("div.location-grid")
     .css("border-bottom", "none");
   $("div.yourlocation").closest("a.button").text("New Text");
-  console.log(someButton);
 } else {
   $(".yourlocation").hide();
 }
