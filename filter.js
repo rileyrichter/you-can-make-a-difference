@@ -11,13 +11,13 @@ $(document).ready(function () {
   if ("mylocation" in localStorage) {
     let currentLocation = localStorage.getItem("mylocation");
     $(".yourlocation").append(currentLocation);
+    $(".yourlocation").children().css("border-bottom", "none");
   } else {
     $(".yourlocation").hide();
   }
 });
 
 setTimeout(function () {
-  $(".yourlocation").children().css("border-bottom", "none");
-  $(".yourlocation").closest(".button").text("New Text");
+  $(".yourlocation").find("a").text("New Text");
   console.log("time");
 }, 1000);
