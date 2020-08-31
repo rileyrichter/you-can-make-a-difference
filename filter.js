@@ -17,7 +17,7 @@ $(document).ready(function () {
 });
 
 setTimeout(function () {
-  $(".yourlocation").closest(".location-grid").css("border-bottom", "none");
+  $(".yourlocation").children().css("border-bottom", "none");
   $(".yourlocation").closest(".button").text("New Text");
   console.log("time");
 }, 1000);
