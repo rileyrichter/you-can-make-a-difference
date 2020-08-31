@@ -7,3 +7,9 @@ $(".button").click(function () {
   localStorage.setItem("mylocation", myVar);
   console.log(myVar);
 });
+
+if ("mylocation" in localStorage) {
+  console.log("yes");
+} else {
+  console.log("no");
+}
