@@ -5,7 +5,6 @@ $("#clear").click(function () {
 $(".button").click(function () {
   let myVar = $(this).parent().parent().parent().parent().html();
   localStorage.setItem("mylocation", myVar);
-  console.log(myVar);
 });
 
 if ("mylocation" in localStorage) {
@@ -13,5 +12,4 @@ if ("mylocation" in localStorage) {
   $(".yourlocation").append(currentLocation);
 } else {
   $(".yourlocation").hide();
-  console.log("no");
 }
