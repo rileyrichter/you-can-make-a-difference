@@ -10,10 +10,13 @@ $(".button").click(function () {
 if ("mylocation" in localStorage) {
   let currentLocation = localStorage.getItem("mylocation");
   $(".yourlocation").append(currentLocation);
-  $("div.yourlocation")
-    .closest("div.location-grid")
-    .css("border-bottom", "none");
-  $("div.yourlocation").closest("a.button").text("New Text");
+  setTimeout(function () {
+    $("div.yourlocation")
+      .closest("div.location-grid")
+      .css("border-bottom", "none");
+    $("div.yourlocation").closest("a.button").text("New Text");
+    console.log("time");
+  }, 1000);
 } else {
   $(".yourlocation").hide();
 }
