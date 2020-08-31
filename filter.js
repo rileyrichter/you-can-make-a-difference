@@ -12,12 +12,8 @@ $(document).ready(function () {
     let currentLocation = localStorage.getItem("mylocation");
     $(".yourlocation").append(currentLocation);
     $(".yourlocation").children().css("border-bottom", "none");
+    $(".yourlocation").find("a").text("Contact Your Reps!");
   } else {
     $(".yourlocation").hide();
   }
 });
-
-setTimeout(function () {
-  $(".yourlocation").find("a").text("New Text");
-  console.log("time");
-}, 1000);
