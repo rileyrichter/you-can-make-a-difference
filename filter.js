@@ -9,7 +9,8 @@ $(".button").click(function () {
 });
 
 if ("mylocation" in localStorage) {
-  console.log("yes");
+  let currentLocation = storage.getItem(mylocation);
+  $(".yourlocation").append(currentLocation);
 } else {
   console.log("no");
 }
