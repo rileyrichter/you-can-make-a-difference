@@ -15,6 +15,7 @@ $(document).ready(function () {
     $(".yourlocation").append(currentLocation);
     $(".yourlocation").children().css("border-bottom", "none");
     $(".yourlocation").find("a").text("Contact Your Reps!");
+    $(".current-location-wrapper").show("fast");
   } else {
     $(".yourlocation").hide();
     $(".current-location-wrapper").hide();
