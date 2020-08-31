@@ -11,8 +11,7 @@ if ("mylocation" in localStorage) {
   let currentLocation = localStorage.getItem("mylocation");
   $(".yourlocation").append(currentLocation);
   let someButton = $(".yourlocation").closest(".locationwrapper").find("a");
-  someButton.text("New text");
-  console.log(someButton.text);
+  $(someButton).text("New text");
 } else {
   $(".yourlocation").hide();
 }
