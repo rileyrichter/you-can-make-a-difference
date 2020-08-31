@@ -1,7 +1,3 @@
-$("#clear").click(function () {
-  location.reload();
-});
-
 $(".button").click(function () {
   let myLocation = $(this).parent().parent().parent().parent().html();
   localStorage.setItem("mylocation", myLocation);
