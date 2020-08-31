@@ -10,7 +10,7 @@ $(".button").click(function () {
 if ("mylocation" in localStorage) {
   let currentLocation = localStorage.getItem("mylocation");
   $(".yourlocation").append(currentLocation);
-  someButton = $(".yourlocation").closest(".locationwrapper").find("a");
+  let someButton = $(".yourlocation").closest(".locationwrapper").find("a");
   console.log(someButton);
 } else {
   $(".yourlocation").hide();
