@@ -3,6 +3,6 @@ $("#clear").click(function () {
 });
 
 $(".button").click(function () {
-  let myVar = $(this).parent().parent().parent().html();
+  let myVar = $(this).parent().parent().parent().parent().html();
   console.log(myVar);
 });
