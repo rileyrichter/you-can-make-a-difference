@@ -3,8 +3,8 @@ $("#clear").click(function () {
 });
 
 $(".button").click(function () {
-  let myVar = $(this).parent().parent().parent().parent().html();
-  localStorage.setItem("mylocation", myVar);
+  let myLocation = $(this).parent().parent().parent().parent().html();
+  localStorage.setItem("mylocation", myLocation);
 });
 
 if ("mylocation" in localStorage) {
