@@ -16,6 +16,7 @@ $(document).ready(function () {
     $(".yourlocation").children().css("border-bottom", "none");
     $(".yourlocation").children().css("background-color", "transparent");
     $(".yourlocation").find("a").text("Contact Your Reps!");
+    $(".yourlocation").find(".location-status").css("color", "#ffffff");
     $(".current-location-wrapper").show();
   } else {
     $(".yourlocation").hide();
