@@ -14,6 +14,7 @@ $(document).ready(function () {
     let currentLocation = localStorage.getItem("mylocation");
     $(".yourlocation").append(currentLocation);
     $(".yourlocation").children().css("border-bottom", "none");
+    $(".yourlocation").children().css("background-color", "transparent");
     $(".yourlocation").find("a").text("Contact Your Reps!");
     $(".current-location-wrapper").show();
   } else {
