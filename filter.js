@@ -16,11 +16,9 @@ $(document).ready(function () {
     $(".yourlocation").children().css("border-bottom", "none");
     $(".yourlocation").children().css("background-color", "transparent");
     $(".yourlocation").find("a").text("Contact Your Reps!");
+    $(".yourlocation").find("a").css("background-color", "#333333");
     $(".yourlocation").find(".location-status").css("color", "#ffffff");
     $(".yourlocation").find(".location-name").css("color", "#ffffff");
-    $(".yourlocation")
-      .find(".button.leading-icon.location:hover")
-      .css("background-color", "#333333");
     $(".current-location-wrapper").show();
   } else {
     $(".yourlocation").hide();
