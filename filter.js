@@ -18,9 +18,7 @@ $(document).ready(function () {
     $(".yourlocation").find("a").text("Contact Your Reps!");
     $(".yourlocation").find(".location-status").css("color", "#ffffff");
     $(".yourlocation").find(".location-name").css("color", "#ffffff");
-    $(".yourlocation")
-      .find(".button .leading-icon .location :hover")
-      .css("background-color", "#e82e5f");
+    $(".yourlocation").find(".button:hover").css("background-color", "#333333");
     $(".current-location-wrapper").show();
   } else {
     $(".yourlocation").hide();
