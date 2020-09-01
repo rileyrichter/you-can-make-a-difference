@@ -23,10 +23,10 @@ $(document).ready(function () {
   }
 });
 
-// Code to share an issue with an elected official
+// Code to share an issue with an elected official on state page
 function tweetRep(repHandle) {
   const repUrl = "https://you-can-make-a-difference.webflow.io";
-  const rep = `Hey, ${repHandle}! we need you to join us in the fight against Black voter suppression! Will you join the fight?`;
+  const rep = `Hey, ${repHandle}! We need you to join us in the fight against Black voter suppression! Will you join the fight?`;
   const repUnescaped = rep
     .replace(/&amp;/g, "&")
     .replace(/&lt;/g, "<")
