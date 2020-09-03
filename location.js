@@ -12,10 +12,8 @@ $(".live-button").click(function () {
 $("#remove").click(function () {
   // remove the mylocation item from local storage
   localStorage.removeItem("mylocation");
-  // hide the div with a class of .yourlocation
-  $(".yourlocation").hide();
-  // hide the div with a class of .current-location-wrapper
-  $(".current-location-wrapper").hide();
+  // remove the div with a class of .current-location-wrapper
+  $(".current-location-wrapper").remove();
 });
 
 // Add the ability to remove a location
