@@ -18,6 +18,13 @@ $("#remove").click(function () {
   $(".current-location-wrapper").hide();
 });
 
+// Add the ability to remove a location
+// When you click the button with an ID of skip
+$("#skip").click(function () {
+  // focus on the element with an ID of main
+  document.getElementById("main").focus();
+});
+
 // If else statement, this checks whether there is a mylocation in localStorage
 $(document).ready(function () {
   // If there is a mylocation in localStorage
