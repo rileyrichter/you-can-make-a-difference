@@ -2,7 +2,7 @@
 // When you click a button with the class of .live-button
 $(".live-button").click(function () {
   // Let myLocation = the html of the .location-grid element
-  let myLocation = $(this).parent().parent().parent().parent().html();
+  let myLocation = $(this).closest(".location-grid").html();
   // Set that html as the value in local storage with the key of mylocation
   localStorage.setItem("mylocation", myLocation);
 });
