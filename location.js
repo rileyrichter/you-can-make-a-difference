@@ -41,8 +41,7 @@ $(document).ready(function () {
     // make sure to show the .current-location-wrapper
     $(".current-location-wrapper").show();
   } else {
-    // if there's nothing in localStorage, hide .yourlocation and .current-location-wrapper
-    $(".yourlocation").hide();
-    $(".current-location-wrapper").hide();
+    // if there's nothing in localStorage, remove.current-location-wrapper
+    $(".current-location-wrapper").remove();
   }
 });
