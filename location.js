@@ -43,3 +43,5 @@ $(document).ready(function () {
     $(".current-location-wrapper").remove();
   }
 });
+
+// Adding this line to test
